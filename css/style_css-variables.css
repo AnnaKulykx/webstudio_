@@ -1,0 +1,30 @@
+/* * ++++++++++ CSS-змінні ++++++++++ */
+/*? Оголошення змінної */
+:root {
+    --brand-color: 000000;
+}
+
+/*? Використовування змінної */
+.text {
+    /* Інші стилі */
+    color: var(--brand-color, 2196F3);
+}
+h1 {
+    /* Інші стилі */
+    background-color: var(--brand-color, 212121);
+}
+#title-2 {
+    /* Інші стилі */
+    border: 2px solid var(--brand-color, 12121);
+}
+
+/*? Резервні значення */
+.text {
+    color: var(--brand-color, 757575);
+} 
+h1 {
+    border-color: var(--brand-color, FFFFFF);
+}
+#title-2 {
+    border: 2px solid var(--brand-color, 2F303A);
+}
